@@ -3,11 +3,13 @@ package com.rojojun.ddd.user.domain.entity;
 import com.rojojun.ddd.user.domain.vo.UserId;
 import com.rojojun.ddd.user.domain.vo.UserName;
 import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 
 import java.util.UUID;
 
 @Entity
 public class User {
+    @Id
     private final UserId id;
     private final UserName name;
 
@@ -18,6 +20,11 @@ public class User {
         this.name = name;
     }
 
+    public User(UserId id, UserName name) {
+
+        this.id = id;
+        this.name = name;
+    }
 
 
     public UserId getId() {

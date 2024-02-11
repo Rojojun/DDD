@@ -8,6 +8,5 @@ import lombok.Getter;
 @Embeddable
 @Getter
 public class UserId {
-    @Id
     private String id;
 }

@@ -3,6 +3,7 @@ package com.rojojun.ddd.user.domain.entity;
 import com.rojojun.ddd.user.domain.vo.UserId;
 import com.rojojun.ddd.user.domain.vo.UserName;
 import jakarta.persistence.*;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.RequiredArgsConstructor;
 
@@ -10,6 +11,7 @@ import java.util.UUID;
 
 @NoArgsConstructor
 @RequiredArgsConstructor
+@Getter
 @Entity
 public class User {
     @GeneratedValue(strategy = GenerationType.IDENTITY)

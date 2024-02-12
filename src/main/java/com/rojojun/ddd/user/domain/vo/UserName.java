@@ -1,9 +1,13 @@
 package com.rojojun.ddd.user.domain.vo;
 
 import jakarta.persistence.Embeddable;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.RequiredArgsConstructor;
 
 @RequiredArgsConstructor
+@NoArgsConstructor
+@Getter
 @Embeddable
 public class UserName {
     private String value;
@@ -14,9 +18,5 @@ public class UserName {
         if (value.length() > 20 )throw new IllegalArgumentException("사용자명은 20글자 이하여야합니다.");
 
         this.value = value;
-    }
-
-    public String getValue() {
-        return value;
     }
 }

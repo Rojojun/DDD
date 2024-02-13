@@ -1,6 +1,6 @@
-package com.rojojun.ddd.user.domain.entity;
+package com.rojojun.ddd.shipment.domain.entity;
 
-import com.rojojun.ddd.user.domain.vo.BaggageId;
+import com.rojojun.ddd.shipment.domain.vo.BaggageId;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

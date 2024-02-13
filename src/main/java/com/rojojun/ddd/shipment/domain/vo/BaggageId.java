@@ -1,4 +1,4 @@
-package com.rojojun.ddd.user.domain.vo;
+package com.rojojun.ddd.shipment.domain.vo;
 
 import jakarta.persistence.Embeddable;
 import lombok.NoArgsConstructor;

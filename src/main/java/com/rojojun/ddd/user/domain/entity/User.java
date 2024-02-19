@@ -33,7 +33,7 @@ public class User {
     }
 
 
-    public UserId getId() {
+    public UserId getUserId() {
         return userId;
     }
 

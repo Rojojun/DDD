@@ -16,7 +16,7 @@ import java.sql.SQLException;
 @Transactional
 @RequiredArgsConstructor
 @Service
-public class OldServiceApplicationService {
+public class OldUserApplicationService {
     private final UserService userService;
 
     private static final String DRIVER = "드라이버_정보";
@@ -30,7 +30,7 @@ public class OldServiceApplicationService {
                 new UserName(userName)
         );
 
-        if (userService.exist(user)) {
+        if (userService.existQuery(user)) {
             throw new RuntimeException("중복 회원");
         }
 

@@ -30,6 +30,10 @@ public class OldServiceApplicationService {
                 new UserName(userName)
         );
 
+        if (userService.exist(user)) {
+            throw new RuntimeException("중복 회원");
+        }
+
         PreparedStatement preparedStatement = connectDataBase().prepareStatement("INSERT INTO users (id, name) VALUES(?, ?)");
         preparedStatement.setString(1, user.getUserId().getId());
         preparedStatement.setString(2, user.getName().getValue());

@@ -1,4 +1,4 @@
-package com.rojojun.ddd.circle.vo;
+package com.rojojun.ddd.circle.domain.vo;
 
 import jakarta.persistence.Embeddable;
 import lombok.Getter;

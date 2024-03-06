@@ -1,11 +1,10 @@
-package com.rojojun.ddd.circle.entity;
+package com.rojojun.ddd.circle.domain.entity;
 
-import com.rojojun.ddd.circle.vo.CircleId;
-import com.rojojun.ddd.circle.vo.CircleName;
+import com.rojojun.ddd.circle.domain.vo.CircleId;
+import com.rojojun.ddd.circle.domain.vo.CircleName;
 import jakarta.persistence.Embedded;
 import jakarta.persistence.EmbeddedId;
 import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 

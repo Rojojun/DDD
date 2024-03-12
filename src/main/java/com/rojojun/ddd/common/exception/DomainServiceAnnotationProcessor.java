@@ -1,5 +1,6 @@
 package com.rojojun.ddd.common.exception;
 
+import com.google.auto.service.AutoService;
 import com.rojojun.ddd.common.annotation.DomainService;
 
 import javax.annotation.processing.*;
@@ -11,7 +12,7 @@ import java.util.Set;
 
 @SupportedAnnotationTypes("com.rojojun.ddd.common.annotation.DomainService")
 @SupportedSourceVersion(SourceVersion.RELEASE_11)
-//@AutoService(Processor.class)
+@AutoService(Processor.class)
 public class DomainServiceAnnotationProcessor extends AbstractProcessor {
 
     @Override

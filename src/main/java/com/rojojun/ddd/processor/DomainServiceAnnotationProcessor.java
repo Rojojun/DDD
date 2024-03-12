@@ -1,4 +1,4 @@
-package com.rojojun.ddd.common.exception;
+package com.rojojun.ddd.processor;
 
 import com.google.auto.service.AutoService;
 import com.rojojun.ddd.common.annotation.DomainService;

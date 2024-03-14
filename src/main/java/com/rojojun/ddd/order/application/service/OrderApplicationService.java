@@ -18,7 +18,7 @@ public class OrderApplicationService {
     public Long placeOrder(List<OrderItem> items) {
         // 주문 생성 및 저장
         Order order = orderService.createOrder(items);
-        return order.getId();
+        return null;
     }
 }
 
